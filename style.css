@@ -311,3 +311,15 @@ th { background: var(--bg2); }
  .content section { display: block !important; break-inside: avoid; }
  pre { white-space: pre-wrap; overflow-wrap: anywhere; }
 }
+
+/* Arquivos obtidos dos sites oficiais, sem filtros ou alteração de cor. */
+.official-logo { display: inline-flex; align-items: center; justify-content: center; background: #fff; padding: 10px 12px; border-radius: 4px; flex-shrink: 0; }
+.official-logo img { display: block; object-fit: contain; max-width: 100%; }
+.topbar-brand-logo { padding: 4px 6px; }
+.official-brands { justify-content: space-between; max-width: 420px; }
+@media (max-width: 640px) {
+ .official-brands { gap: 16px; }
+ .sabesp-brand { width: 145px; height: auto; }
+ .ibm-brand { width: 64px; height: auto; }
+ .topbar-brand-logo img { width: 48px; height: auto; }
+}
