@@ -317,9 +317,18 @@ th { background: var(--bg2); }
 .official-logo img { display: block; object-fit: contain; max-width: 100%; }
 .topbar-brand-logo { padding: 4px 6px; }
 .official-brands { justify-content: space-between; max-width: 420px; }
+.ibm-logo-frame { background: transparent; }
+.official-logo .ibm-dark { display: none; }
+:root[data-theme="dark"] .official-logo .ibm-light { display: none; }
+:root[data-theme="dark"] .official-logo .ibm-dark { display: block; }
+:root[data-theme="light"] .official-logo .ibm-light { display: block; }
 @media (max-width: 640px) {
  .official-brands { gap: 16px; }
  .sabesp-brand { width: 145px; height: auto; }
  .ibm-brand { width: 64px; height: auto; }
  .topbar-brand-logo img { width: 48px; height: auto; }
+}
+@media print {
+ .official-logo .ibm-dark { display: none !important; }
+ .official-logo .ibm-light { display: block !important; }
 }
